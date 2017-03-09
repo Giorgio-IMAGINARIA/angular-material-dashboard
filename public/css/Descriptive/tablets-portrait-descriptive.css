@@ -1,0 +1,28 @@
+/*-------------------------------------------------Main Content-------------------------------------------------------*/
+
+.firstArticle{
+    margin-top: 80px;
+    /*background-color: #003580;*/
+}
+
+article{
+    width:78%;
+    padding-left: 30px;
+}
+.internalArticle{
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+h1{
+    font-size: 30px;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+}
+article p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1pt;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*background-color: green;*/
+}

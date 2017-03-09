@@ -1,0 +1,752 @@
+.example-container {
+  width: 100%;
+  height: 100%;
+}
+ md-sidenav-container, .my-content {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+#sidenav-buttons-container{
+  display:flex;
+  flex-direction: column
+}
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+.header-button-container{
+    justify-content:center;
+    display:flex;
+    width:64px;
+    height:64px;
+}
+.header-button{
+      width:32px;
+    height:32px;
+    align-self:center;
+    cursor:pointer;
+     justify-content:center;
+     align-items: center;
+}
+.header-button-icon{
+    padding:4px;
+}
+
+#loginGrid{
+    height:100%;
+}
+#leftPanel {
+    position: fixed;
+    z-index: 3;
+}
+
+.mainBox {
+    display: flex;
+    width: 100%;
+}
+
+#splashBox {
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainVideo {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    filter: grayscale(100%) brightness(0.5);
+    transition: opacity 1s linear;
+}
+
+#videoOverlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: #3d3d58;
+    opacity: 0.7;
+}
+
+#innerBox {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+#splashWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#splashPageCentralBox {
+    display: flex;
+        margin-top: 16vw;
+}
+
+#splashPageMainCommentBox {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vw;
+}
+
+#splashPageMainCommentBox p {
+    margin: 0;
+    margin-left: 8vw;
+    color: #fff;
+    font-weight: 100;
+}
+
+.splashPageCentralInnerBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#firstSplashAccent {
+    color: #ff6600;
+}
+
+#secondSplashAccent {
+    color: #aad400;
+}
+
+#thirdSplashAccent {
+    color: #5f8dd3;
+}
+
+#splashPageBlockchainHalf {
+    justify-content: flex-end;
+}
+
+#buttonBoxWrap {
+    justify-content: center;
+}
+
+#buttonBox {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.singleMainButtonBox {
+    padding: 1vw;
+    border-radius: 2vw;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#watchVideoButtonLink{
+    text-decoration:none;
+}
+.watchMainButtonBox {
+    width:7vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.singleMainButtonBox:hover {
+    background-color: #fff;
+    color: #616161;
+    cursor: pointer;
+}
+.watchMainButtonBox:hover {
+    background-color: #fff;
+    color: #616161;
+    cursor: pointer;
+}
+
+.singleMainButtonBox:hover .buttonCircle {
+    border: 0.1vw solid #616161;
+}
+
+.watchMainButtonBox:hover .buttonCircle {
+    border: 0.1vw solid #616161;
+}
+
+.singleMainButtonBox i {
+    font-weight: 400;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.watchMainButtonBox i {
+    font-weight: 400;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.singleMainButtonBox p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.watchMainButtonBox p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.buttonCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 4vw;
+    border: 0.1vw solid white;
+    border-radius: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.pictureBox {
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+#communitiesBox {
+    background-image: url("../../public/images/communities.jpg");
+}
+
+.mask {
+    left: 0;
+    position: absolute;
+}
+
+.sectionMainText {
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.sectionMainText p {
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    margin-left: 3vw;
+    margin-top: 1.5vw;
+}
+
+.sectionMainIcon {
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.sectionMainIcon i {
+    color: #fff;
+    font-size: 6vw;
+    margin-top: 12vw;
+}
+
+.sectionMainIcon i.left {
+    margin-left: 3vw;
+}
+
+.sectionMainIcon i.right {
+    margin-right: 3vw;
+    margin-left: auto;
+}
+
+.sectionBottomText {
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
+
+.sectionBottomTextLeft {
+    margin-left: 3vw;
+}
+
+.sectionBottomTextInner {
+    margin-top: 45.5vw;
+    display: flex;
+    height: 5vw;
+    line-height: 5vw;
+}
+
+.sectionBigText {
+    height: inherit;
+    line-height: inherit;
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vw;
+    padding-right: 2vw;
+}
+
+.registerButtonBlockWrap {
+    border-left: 0.1vw solid #fff;
+    width: 8vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerButtonBlockInnerWrap {
+    padding: 0.4vw 1vw;
+    margin-left: 3vw;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 1.5vw;
+}
+
+.registerButtonBlockInnerWrap:hover {
+    cursor: pointer;
+    color: #616161;
+    background-color: #fff;
+}
+
+.registerButtonBlockInnerWrap:hover .buttonRegister {
+    border: 0.1vw solid #616161;
+}
+
+.sectionSmallText {
+    margin-right: 0.4vw;
+    line-height: initial;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+}
+
+.sectionSmallTextMobile {
+    margin-right: 0.4vw;
+    line-height: initial;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+}
+
+.buttonRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1.1vw;
+    border: 0.1vw solid #fff;
+}
+
+.buttonRegister i {
+    font-size: 1vw;
+    font-weight: 100;
+    margin-left: 0.2vw;
+    margin-top: 0.1vw;
+}
+
+.sectionBottomTextRight {
+    margin-right: 3vw;
+    margin-left: auto;
+}
+
+#developersBox {
+    background-image: url("../../public/images/developer.jpg");
+}
+
+#startBox {
+    background-image: url("../../public/images/start.jpg");
+}
+
+#innerMessage1 {
+    top: 13vw;
+    left: 40vw;
+}
+
+.innerMessageWrap {
+    height: 3vw;
+    line-height: 3vw;
+    position: absolute;
+}
+
+.innerMessageLink {
+    font-weight: bold;
+    padding: 0 0.2vw;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 0.3vw;
+}
+
+.innerMessageLink:hover {
+    color: #616161;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.innerMessageText {
+    font-size: 1.8vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.innerMessageNormal {
+    font-weight: 100;
+    color: #fff;
+}
+
+#specialSectionBig {
+    display: flex;
+    height: 5vw;
+    line-height: 5vw;
+    align-items: flex-end;
+    position: absolute;
+    top: 45vw;
+    left: 3vw;
+}
+
+#comVideoLink {
+    top: 27vw;
+    left: 50vw;
+    position: absolute;
+}
+.comDevMessageWrap{
+ position: absolute;
+       font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: #fff;
+}
+.devMessageWrap {
+    width:32vw;
+    padding:1vw;
+    border-radius:1vw;
+}
+#devInnerMessage1 {
+    line-height: 4vw;
+    top: 13vw;
+    left: 4vw;
+    font-size: 3.5vw;
+    letter-spacing: 0.08vw;
+    background-color: rgba(62, 111, 138, 0.6);
+}
+#devInnerMessage2 {
+    line-height: 4vw;
+    top: 13vw;
+    left: 47vw;
+    font-size: 3.5vw;
+    letter-spacing: 0.08vw;
+   background-color: rgba(62, 74, 138, 0.6);
+    
+}
+#comInnerMessage1 {
+    top: 13vw;
+    left: 18vw;
+    font-size: 3.5vw;
+}
+#comInnerMessage2 {
+    top: 9vw;
+    left: 71vw;
+    font-size: 3vw;
+}
+#comInnerMessage3 {
+    top: 17vw;
+    left: 60vw;
+    font-size: 1.8vw;
+}
+#comInnerMessage4 {
+    top: 32vw;
+    left: 12vw;
+    font-size: 2vw;
+}
+#comInnerMessage5 {
+    top: 38vw;
+    left: 68vw;
+    font-size: 2.5vw;
+}
+#comInnerMessage6 {
+    top: 15vw;
+    left: 18vw;
+    font-size: 2vw;
+}
+#innerMessage2 {
+    top: 28vw;
+    left: 12vw;
+}
+
+#innerMessage3 {
+    top: 42vw;
+    left: 65vw;
+}
+
+#lowerBorder {
+    background-color: #C62828;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerBox {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    flex-direction: column;
+    background-color: #333449;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerFooterBox {
+    display: flex;
+}
+
+#topFooterBox {
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+}
+
+.internalInnerFooterBox {
+    display: flex;
+    width: inherit;
+    height: 50%;
+    font-size: 1.2vw;
+}
+
+.internalInnerFooterBox p {
+    padding: 0 3vw;
+}
+
+#mainTextFooterBox {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#mainTextFooter {
+    letter-spacing: 0.1vw;
+    text-align: justify;
+    font-style: oblique;
+}
+
+.footerCitationNormal {
+    color: #fff;
+}
+
+#footerCitationLink {
+    color: #fff;
+    padding: 0 0.2vw;
+    background-color: transparent;
+    border-radius: 0.3vw;
+    font-weight: bold;
+}
+
+#footerCitationLink:hover {
+    cursor: pointer;
+    color: #616161;
+    background-color: #fff;
+}
+
+#nameTextFooterBox {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#bottomFooterBox {
+    width: 100%;
+    height: 30%;
+}
+
+.lowestFooterBox {
+    flex-basis: 100%;
+    display: flex;
+}
+
+#lowestFooterBoxLeft {
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+#lowestFooterBoxCentral {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#footerNavBox {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavInnerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerNavText {
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+.footerNavTextBarrier,
+.footerNavTextLink {
+    color: #fff;
+}
+
+.footerNavTextLink {
+    padding: 0 0.2vw;
+    background-color: transparent;
+    border-radius: 0.3vw;
+}
+
+.footerNavTextLink:hover {
+    cursor: pointer;
+    color: #616161;
+    background-color: #fff;
+}
+
+#footerCopyrightText {
+    font-weight: 100;
+    font-size: 0.6vw;
+}
+
+#lowestFooterBoxRight {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#globilityLogoFooterBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#globilityLogoFooterBox p {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+#globilityLogoContainer:hover {
+    cursor: pointer;
+}
+ .sectionSmallTextMobile {
+        display:none;
+    }
+
+@media only screen and (max-width: 768px) {
+    #accountNameWrap p {
+        font-size: 2vw;
+    }
+    #navListBox {
+        height: 100%;
+        width: initial;
+    }
+    .buttonCircle {
+        width: 4vw;
+        height: 4vw;
+        border: 0.2vw solid white;
+        border-radius: 4vw;
+    }
+    .singleMainButtonBox i {
+        font-size: 2vw;
+    }
+    
+    .registerButtonBlockWrap {
+        width: initial;
+    }
+}
+
+@media only screen and (max-width: 414px) and (orientation:portrait) {
+    .sectionSmallTextMobile {
+        display:initial;
+        font-weight: 100;
+    }
+    #buttonBox{
+        display:none;
+    }
+    .buttonCircle{
+        width: 8vw;
+    height: 8vw;
+    }
+    
+    .buttonCircle i{
+    font-size: 3.5vw;
+    }
+    .watchMainButtonBox > p{
+       font-size: 2.2vw;
+    }
+     .sectionSmallTextMobile {
+        font-size: 4vw;
+    }
+.sectionMainText p, .buttonRegister, .sectionSmallText, .sectionBigText, #topFooterBox, #globilityLogoFooterBox p {
+        display: none;
+    
+}
+.registerButtonBlockWrap{
+    border-left: 0;
+}
+.innerMessageNormal{
+    display: none;
+}
+.innerMessageText{
+    font-size:4.8vw;
+    font-weight: 100;
+}
+#innerMessage1{
+    left:48vw;
+}
+#innerMessage2{
+    left:31vw;
+}
+#innerMessage3{
+    left:72vw;
+    top:38vw;
+}
+#lowestFooterBoxCentral{
+    align-items: center;
+}
+#footerNavBox{
+height: 100%;
+}
+#footerNavBox div:last-child{
+    display: none;
+}
+.footerNavInnerBox{
+    height:100%;
+}
+.footerNavInnerBox p{
+    height:100%;
+}
+.footerNavText{
+    font-size:1.8vw;
+}
+}

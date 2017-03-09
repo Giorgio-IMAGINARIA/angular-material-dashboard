@@ -1,0 +1,56 @@
+/*-------------------------------------------------Main Content-------------------------------------------------------*/
+#contactWrap{
+    width:100%;
+}
+.contactsTitle{
+    text-transform: uppercase;
+    width:100%;
+    border-bottom:10px solid #00AF85;
+}
+.contactsTitle div{
+    position:relative;
+}
+#socialContainerContacts{
+    width:100%;
+    border-bottom: 1px solid #999999;
+    /*background-color: #004ab3;*/
+}
+#link1{
+    background: url(../../Pics/Social/octocat.svg) center no-repeat;
+}
+#link2{
+    background: url(../../Pics/Social/linkedin.svg) center no-repeat;
+}
+#link3{
+    background: url(../../Pics/Social/twitter.svg) center no-repeat;
+}
+label, input[type=text], textarea {
+    color:#606060;
+}
+label span{
+    color:red;
+}
+input[type=text]{
+    border:1px solid #999999;
+}
+input[type=submit]{
+    background-color: #000000;
+    color:#FAFAFA;
+    border:none;
+}
+textarea{
+    border:1px solid #999999;
+}
+form{
+   /* background-color: #f89406;*/
+}
+#map{
+    width:calc(100% - 1px);
+}
+#mapFrame{
+    width:inherit;
+    height:inherit;
+    border-left:1px solid #999999;
+    border-right:1pt solid #999999;
+    border-bottom:1px solid #999999;
+}

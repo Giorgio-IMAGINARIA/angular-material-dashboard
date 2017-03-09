@@ -1,0 +1,24 @@
+/*-------------------------------------------------Main Content-------------------------------------------------------*/
+
+#imaginaria{
+    border-left-color: #009393;
+}
+#rui{
+    border-left-color: #CB0000;
+}
+#italians{
+    border-left-color: #333333;
+}
+
+h1 a {
+    color: #000000;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+h1 a:hover{
+    color:#717171;
+}

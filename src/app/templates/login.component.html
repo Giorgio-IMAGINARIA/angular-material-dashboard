@@ -1,0 +1,46 @@
+<md-sidenav-container class="example-container">
+  <md-sidenav mode="push" #sidenav class="example-sidenav">
+    <div id="sidenav-buttons-container">
+      <button md-button>Home</button>
+      <button md-button>Page - 1</button>
+      <button md-button>Page - 2</button>
+    </div>
+  </md-sidenav>
+  <div class="my-content">
+    <md-toolbar color="primary">
+      <span>
+    <div class="header-button-container">
+      <div class="header-button" mdTooltip="Menu" [mdTooltipPosition]="tooltipPosition" (click)="sidenav.open()">
+<md-icon class="header-button-icon" svgIcon="menu-icon"></md-icon>
+      </div>
+    </div>
+    <!--<i class="material-icons">menu</i>-->
+    </span>
+      <!-- This fills the remaining space of the current row -->
+      <span class="example-fill-remaining-space">Dashboard - Home</span>
+      <span>Hello User!</span>
+      <div class="header-button-container">
+        <div class="header-button" [mdMenuTriggerFor]="menu">
+          <md-icon class="header-button-icon" svgIcon="account-icon"></md-icon>
+        </div>
+        <md-menu #menu="mdMenu">
+          <button md-menu-item>
+    <md-icon>build</md-icon>
+    <span>Edit account</span>
+  </button>
+          <button md-menu-item>
+    <md-icon><i class="material-icons">exit_to_app</i></md-icon>
+    <span>Logout</span>
+  </button>
+        </md-menu>
+      </div>
+
+    </md-toolbar>
+    <md-grid-list id="loginGrid" cols="4" rowHeight="100px">
+      <md-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+        {{tile.text}}
+      </md-grid-tile>
+    </md-grid-list>
+  </div>
+</md-sidenav-container>
+<router-outlet></router-outlet>

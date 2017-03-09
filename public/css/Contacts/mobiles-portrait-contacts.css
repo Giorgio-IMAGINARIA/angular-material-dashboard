@@ -1,0 +1,73 @@
+/*-------------------------------------------------Main Content-------------------------------------------------------*/
+
+#contactLinks{
+    width:100%;
+    /*background-color: red;*/
+}
+#contactForm{
+    width:100%;
+    /*background-color: green;*/
+}
+.contactsTitle{
+    font-size: 20px;
+    letter-spacing: 1pt;
+    height:60px;
+    line-height: 40px;
+    /*background-color: yellow;*/
+
+}
+#contactLinks, #contactForm{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.contactsTitle div{
+    top:calc(100% - 40px);
+
+}
+#socialContainerContacts{
+    height: 100px;
+
+    /*background-color: blueviolet;*/
+}
+.socialWrapContacts{
+    width: 60px;
+    height:60px;
+    /* background-color: yellowgreen;*/
+}
+.socialLogoContacts{
+    width: inherit;
+    height:inherit;
+    background-size: 60px 60px;
+}
+label{
+    margin-top:17px;
+    margin-bottom: 5px;
+}
+input[type=text]{
+    height:30px;
+    line-height: 30px;
+}
+textarea, label, input[type=text], input[type=submit]{
+    font-size: 15px;
+}
+textarea{
+    height:180px;
+    line-height:30px;
+}
+input[type=submit]{
+    height:30px;
+    width:90px;
+    margin-top:20px;
+
+    /* Safari 3-4, IOS 1-3.2, Android 1.6- */
+    -webkit-border-radius:15px;
+    /* Firefox 1-3.6 */
+    -moz-border-radius:15px;
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, IOS 4, Android 2.1+ */
+    border-radius:15px;
+}
+#map{
+    height:250px;
+    /*background-color: magenta;*/
+}
+

@@ -1,0 +1,409 @@
+/*--------------------------------------------------- Foundation------------------------------------------------------*/
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    margin: 0;
+    font: 16px/1 sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+iframe {
+    border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+blockquote,
+figure,
+button {
+    margin: 0;
+    padding: 0;
+}
+main,
+li {
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-size: inherit;
+}
+strong {
+    font-weight: bold;
+}
+sup {
+    position: relative;
+    top: -.5em;
+    font-size: 65%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+a,
+button {
+    color: inherit;
+    transition: .3s;
+}
+a {
+    text-decoration: none;
+}
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    -webkit-font-smoothing: inherit;
+}
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+/*------------------------------------------------ Initialization-----------------------------------------------------*/
+
+html, body{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    background:#ffffff;
+    position:fixed;
+}
+.blurred{
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    transition: 0s filter linear;
+    transition: 0s -webkit-filter linear;
+    -moz-transition: 0s filter linear;
+}
+
+a{
+    color:#000000;
+}
+
+ul {
+    list-style-type: none;
+}
+textarea{
+    resize:none;
+}
+
+/*------------------------------------------------------Fonts---------------------------------------------------------*/
+
+.font-Roboto-L{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.font-Roboto-B{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/*----------------------------------------------------Flexboxes-------------------------------------------------------*/
+
+.flexContainer{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flexContainerColumn{
+    -webkit-box-direction: reverse;
+    -moz-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flexContainerRow{
+    box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;      /* Mozilla */
+    -webkit-box-orient: horizontal;   /* WebKit */
+    box-orient: horizontal;           /* As specified */
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flexContainerColumnHAlignCenter{
+    -webkit-box-align: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-align: center;     /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-align: center;  /* TWEENER - IE 10 */
+    -webkit-align-items: center;  /* NEW - Chrome */
+    align-items: center;
+}
+
+.flexContainerRowHAlignCenter{
+    -webkit-box-pack: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: center;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: center;  /* TWEENER - IE 10 */
+    -webkit-justify-content: center;  /* NEW - Chrome */
+    justify-content: center;
+}
+.flexContainerRowHAlignSpaceAround{
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.flexContainerRowVAlignCenter{
+    -webkit-box-align: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-align: center;     /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-align: center;  /* TWEENER - IE 10 */
+    -webkit-align-items: center;  /* NEW - Chrome */
+    align-items: center;
+}
+
+.flexContainerColumnVAlignCenter{
+    -webkit-box-pack: center;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: center;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: center;  /* TWEENER - IE 10 */
+    -webkit-justify-content: center;  /* NEW - Chrome */
+    justify-content: center;
+}
+
+.flexContainerRowHAlignSpaceBetween{
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+.flexContainerRowHAlignJustifyRight{
+    -webkit-box-pack: end;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: end;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: end;  /* TWEENER - IE 10 */
+    -webkit-justify-content: flex-end;  /* NEW - Chrome */
+    justify-content: flex-end;
+}
+.flexContainerRowHAlignJustifyLeft{
+    -webkit-box-pack: start;  /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-pack: start;  /* OLD - Firefox 19- (buggy but mostly works) */
+    -ms-flex-pack: start;  /* TWEENER - IE 10 */
+    -webkit-justify-content: flex-start;  /* NEW - Chrome */
+    justify-content: flex-start;
+}
+.flexContainerRowWrap{
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexChildrenInColumnAlignRight{
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+}
+
+/*----------------------------------------------------Elements--------------------------------------------------------*/
+
+/*-----------------------------------------------------Header---------------------------------------------------------*/
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.9);
+    border-bottom:1px solid #000000;
+}
+
+.logo{
+    position:absolute;
+    height:inherit;
+}
+
+#logo-generic{
+    background-image: url(../../Pics/Logo/logo-generic.svg);
+}
+
+#contactText{
+    height:inherit;
+    text-align:left;
+    position:absolute;
+    text-transform: uppercase;
+    color:#000000;
+}
+
+#phoneWrap{
+    position:absolute;
+    text-align: center;
+}
+
+#phoneText{
+    color:#000000;
+}
+
+.menuText{
+    position:absolute;
+    width:100px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#hamburgerContainer{
+    position:absolute;
+    right:0;
+    height:inherit;
+}
+
+#hamburger {
+    cursor: pointer;
+}
+.menuLine{
+    width: 100%;
+    background-color:#000000;
+}
+
+
+/*-------------------------------------------------Main Content-------------------------------------------------------*/
+.grad {
+    background: -webkit-linear-gradient(#FFFFFF, #D9D9D9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFFFF, #D9D9D9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFFFF, #D9D9D9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFFFFF, #D9D9D9); /* Standard syntax */
+}
+main{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    /*background-color: black;*/
+    overflow: auto;
+}
+#spaceHeader{
+    width:100%;
+}
+#spaceFooter{
+    width:100%;
+}
+
+/*---------------------------------------------------Right-Menu-------------------------------------------------------*/
+
+#mask{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: #000000;
+    z-index: 2000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#rightMenu{
+    position:fixed;
+    z-index: 3000;
+    top:0;
+    background-color: #ffffff;
+    height:100%;
+    box-shadow: -10px 0px 40px -20px #595959;
+    border-left:solid 1px #959595;
+
+    -webkit-transform: translateY(0px); /* Safari */
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px); /* IE 9 */
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+
+    -webkit-transition-property:-webkit-transform;
+    -moz-transition-property:-moz-transform;
+    -o-transition-property:-o-transform;
+    transition-property:transform;
+
+    -webkit-transition-duration:0s;
+    -moz-transition-duration:0s;
+    -o-transition-duration:0s;
+    transition-duration:0s;
+
+    -webkit-transition-timing-function:linear;
+    -moz-transition-timing-function:linear;
+    -o-transition-timing-function:linear;
+    transition-timing-function:linear;
+}
+
+.closeText{
+    color:#000000;
+    text-transform: uppercase;
+    /*background-color: #003580;*/
+}
+#hamburgerContainerX{
+    margin-right:0;
+    height:inherit;
+    /*background-color: green;*/
+}
+
+
+#hamburgerX{
+    cursor: pointer;
+    position:relative;
+}
+#hamburgerX:before,#hamburgerX:after{
+    content:'';
+    position:absolute;
+    background-color:#000000;
+}
+#hamburgerX:before{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+#hamburgerX:after{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+#linksList{
+    position:absolute;
+    width:100%;
+}
+ul#linksList li{
+    text-align: center;
+}
+#socialContainer{
+    position:absolute;
+    bottom:0;
+}
+.socialLogo{
+    position:absolute;
+}
+#gitHub{
+    background: url(../../Pics/Social/octocat.svg) center no-repeat;
+}
+#linkedIn{
+    background: url(../../Pics/Social/linkedin.svg) center no-repeat;
+}
+#twitter{
+    background: url(../../Pics/Social/twitter.svg) center no-repeat;
+}
+
+

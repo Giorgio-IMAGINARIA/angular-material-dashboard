@@ -1,0 +1,13 @@
+/* TEAM */
+	Software Developer: Giorgio Mazzei
+	UX/UI Designer: Giorgio Mazzei
+    Graphic Designer: Giorgio Mazzei
+	Contact: giorgio.mazzei@imaginaria.london
+	From:London, UK
+
+/* SITE */
+	Last update:2017/03/08
+	Language: English
+	Doctype:HTML5
+	Editor: Visual Studio Code
+	Graphic Software: Gimp, Inkscape

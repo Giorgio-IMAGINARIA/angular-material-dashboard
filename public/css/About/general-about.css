@@ -1,0 +1,17 @@
+/*-------------------------------------------------Main Content-------------------------------------------------------*/
+
+article p:last-child{
+    margin-bottom: 0;
+}
+.subtitle{
+    font-style: italic;
+}
+#skills{
+    border-left-color: #7F44FF;
+}
+#languages{
+    border-left-color: #FF7B22;
+}
+#education{
+    border-left-color: #00AF85;
+}

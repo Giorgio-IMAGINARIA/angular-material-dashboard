@@ -1,0 +1,290 @@
+/*********************************************************************************
+**********************************************************************************
+**********************************************************************************/
+
+/* ----------- Desktops Media Queries----------- */
+
+.headerSpec{
+    height:80px;
+    line-height:80px;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+}
+.logo{
+    width: 80px;
+    height:80px;
+    margin-left:10px;
+    background-size: 80px 80px;
+    /*background-color: yellow;*/
+}
+#contactText{
+    letter-spacing: 2pt;
+    line-height: 80px;
+    height:80px;
+    width:165px;
+    /*background-color: #1c3e95;*/
+    right:calc(0% + 260px);
+}
+
+#phoneWrap{
+    width:180px;
+    /*background-color: yellow;*/
+    right:calc(0% + 80px);
+}
+
+.menuText{
+    display:none;
+    width:100px;
+    /*background-color: #1c3e95;*/
+    right:calc(0% + 80px);
+}
+.closeText{
+    width:100px;
+    /*background-color: #1c3e95;*/
+    right:calc(0% + 80px);
+}
+#hamburgerContainer{
+    width:80px;
+    /*background-color: #7f7f7f;*/
+}
+#hamburgerContainerX{
+    width:80px;
+    /*background-color: #7f7f7f;*/
+}
+
+/*
+the hamburger button
+*/
+#hamburger {
+    height: 22px;
+    width: 38px;
+    /*background-color: red;*/
+}
+
+/*
+The stripes in the hamburger button
+*/
+.menuLine{
+    height: 2px;
+}
+
+#hamburger div:nth-child(2) {
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+#sideNav{
+    top:calc(50% - 70px);
+    /*background-color: #1c3e95;*/
+    width:19px;
+    height: 140px;
+    left:43px;
+}
+
+.sideNavButton{
+    border: 1px solid #FFFFFF;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 0 1px #1D1D1B;
+}
+
+
+#homeStrip{
+    top:18%;
+    /*background-color: lightcoral;*/
+}
+
+
+#homeTitle{
+    font-size: 32pt;
+    letter-spacing: 6pt;
+    height:100px;
+    line-height:80px;
+    /*background-color: yellowgreen;*/
+}
+
+#homeLine{
+    height:2px;
+    width:270px;
+}
+#homeComment{
+    width:600px;
+    font-size: 14pt;
+    letter-spacing: 1.2pt;
+    line-height: 18pt;
+    height:130px;
+    /*background-color: bisque;*/
+}
+#ruiStrip{
+    height:220px;
+}
+#ruiTitle{
+    font-size: 16.5pt;
+    letter-spacing: 1pt;
+    height:17pt;
+    line-height:16.5pt;
+    /*background-color: yellowgreen;*/
+}
+#ruiLine{
+    height:1px;
+    width:340px;
+}
+
+#ruiComment1{
+    font-size: 42pt;
+    letter-spacing: 2.5pt;
+    height:42pt;
+    line-height:42pt;
+    /*background-color: darkslategray;*/
+}
+#ruiComment2{
+    font-size: 19pt;
+    letter-spacing: 1pt;
+    height:19pt;
+    line-height:19pt;
+    /*background-color: fuchsia;*/
+}
+.ruiSpace{
+    height:20px;
+}
+#mbiStrip{
+    width:620px;
+    height:280px;
+}
+#mbiTitle{
+    font-size: 18pt;
+    height:13.5pt;
+    line-height:13.5pt;
+    /*background-color: yellowgreen;*/
+}
+#mbiLine{
+    height:1px;
+    width:83%;
+}
+#mbiContainer{
+    height:120px;
+    /*background-color: red;*/
+}
+#mbiLogo{
+    width:120px;
+    height:120px;
+}
+#mbiInternal{
+    width:330px;
+    height:120px;
+    /*background-color: #009999;*/
+}
+
+#mbiComment1{
+    font-size: 35pt;
+    letter-spacing: 0.5pt;
+    height:35pt;
+    line-height:35pt;
+    /*background-color: darkslategray;*/
+}
+#mbiComment2{
+    font-size: 22pt;
+    letter-spacing: 1pt;
+    height:28pt;
+    line-height:28pt;
+    /*background-color: fuchsia;*/
+}
+.mbiSpace{
+    height:30px;
+}
+
+#section0{
+    background-image: url(../../Pics/IPicsL/background1.jpg);
+}
+#section1{
+    background-image: url(../../Pics/IPicsL/background2.jpg);
+}
+#section2{
+    background-image: url(../../Pics/IPicsL/background3.jpg);
+}
+#rightMenu{
+    right:-250px;
+    width:200px;
+}
+
+#hamburgerX{
+    height: 22px;
+    width: 38px;
+    /*background-color:red;*/
+}
+
+#hamburgerX:before,#hamburgerX:after{
+    width:30px;
+    height:2px;
+    top:10px;
+}
+
+#hamburgerX:before{
+    left:4px;
+}
+#hamburgerX:after{
+    right:4px;
+}
+
+#linksList{
+    bottom:calc(50% - 200px);
+    font-size: 18pt;
+    letter-spacing: 3pt;
+    /*background-color: #1c3e95;*/
+}
+ul#linksList li{
+    /*background-color: brown;*/
+    height:100px;
+    line-height:80px;
+}
+#socialContainer{
+    width:200px;
+    height:80px;
+    /*background-color: yellow;*/
+}
+.socialLogo{
+    width: 40px;
+    height:40px;
+    background-size: 40px 40px;
+}
+
+.socialWrap{
+    width: 40px;
+    height:40px;
+    /*background-color: yellowgreen;*/
+}
+
+/*********************************************************************************
+*****************************(max-height: 622px)**********************************
+**********************************************************************************/
+@media screen and (max-height: 622px) {
+
+    #homeLine{
+        display:none;
+    }
+
+    #homeComment{
+        display:none;
+    }
+
+}
+
+
+/*********************************************************************************
+********************************(max-height: 494px)*******************************
+**********************************************************************************/
+@media screen and (max-height: 494px) {
+
+    #sideNav{
+        display:none;
+    }
+
+    #linksList{
+        display:none;
+    }
+
+    #socialContainer{
+        display:none;
+    }
+
+}
