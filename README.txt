@@ -7,4 +7,4 @@ A dashboard made with Angular2 + Angular Material
 5) - navigate to "http://localhost:8080/" in your browser
 6) - enjoy :)
 
-Live application at (coming soon...)
+Live application at http://www.imaginaria.uk/
