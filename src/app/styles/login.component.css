@@ -1,3 +1,116 @@
+.slide-panel-sides-left{
+ justify-content: flex-start; 
+ flex-grow: 1; 
+}
+.slide-panel-sides-right{
+display:flex;
+justify-content: center;
+ flex-grow: 1; 
+ 
+}
+#slide-panel-container{
+    display:flex;
+    align-items: center;
+}
+#slide-panel{
+    display:flex;
+    flex-direction: column;
+}
+
+md-slider {
+  width: 100%;
+}
+
+#spinner-central-panel{
+    display:flex;
+    justify-content: space-between;
+}
+
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+md-chip {
+  max-width: 200px;
+}
+
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.example-selected-value {
+  margin: 15px 0;
+}
+
+.search-input-full{
+    width:100%;
+}
+
+.header-panel-left{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header-panel-right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-panel{
+    flex-grow: 1;
+}
+#main-content-wrap{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+#main-content-inner-wrap{
+    display:flex;
+    flex-wrap: wrap;
+}
+.card-wrap{
+ padding:20rem;
+ flex: 1 1 0;
+ display: flex;
+ justify-content: center;
+    
+}
+.generic-card {
+  width: 400px;
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.example-header-image {
+  background-image: url('assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+#loginGrid-wrap{
+    padding:0 20rem;
+}
+.tile-style {
+    font-size: 20px;
+}
 .example-container {
   width: 100%;
   height: 100%;
@@ -45,6 +158,7 @@
 
 #loginGrid{
     height:100%;
+    top: 20rem;
 }
 #leftPanel {
     position: fixed;

@@ -8,6 +8,7 @@ import { routing } from './app.routing';
 // Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login.component';
+import { DialogOverviewExampleDialog } from './components/dialogOverviewExampleDialog.component';
 // Directives
 // Services
 // External modules
@@ -24,8 +25,10 @@ import 'hammerjs';
   declarations: [
     AppComponent,
     LoginComponent
+    
   ],
   providers: [
+    // DialogOverviewExampleDialog
   ],
   bootstrap: [AppComponent]
 })
