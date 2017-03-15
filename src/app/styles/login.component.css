@@ -1,3 +1,6 @@
+#mainbar-style{
+    font-weight: 400;
+}
 .slide-panel-sides-left{
  justify-content: flex-start; 
  flex-grow: 1; 
@@ -78,18 +81,25 @@ md-chip {
 }
 #main-content-wrap{
     width: 100%;
+    display: -webkit-flex;
     display:flex;
+    /*-webkit-flex-wrap: wrap;*/
     flex-wrap: wrap;
     
 }
 #main-content-inner-wrap{
     display:flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 .card-wrap{
  padding:20rem;
- flex: 1 1 0;
+ /*-webkit-flex: 1 1 0;*/
  display: flex;
+ /*flex: 1 1 0;*/
+ flex-grow: 1;
+ flex-shrink: 1;
+ flex-basis: auto;
+ /*flex-basis: 400px;*/
  justify-content: center;
     
 }
