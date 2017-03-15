@@ -7,11 +7,11 @@ import {MdDialog} from '@angular/material';
 
 
 @Component({
-    selector: 'login',
-    templateUrl: '../templates/login.component.html',
-    styleUrls: ['../styles/login.component.css']
+    selector: 'panelChart',
+    templateUrl: '../templates/panelChart.component.html',
+    styleUrls: ['../styles/panelChart.component.css']
 })
-export class LoginComponent {
+export class PanelChartComponent {
 
   selectedValue: string;
 

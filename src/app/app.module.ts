@@ -7,7 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { routing } from './app.routing';
 // Components
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login.component';
+import { DashboardComponent } from './components/dashboard.component';
+import { PanelChartComponent } from './components/panelChart.component';
 import { DialogOverviewExampleDialog } from './components/dialogOverviewExampleDialog.component';
 // Directives
 // Services
@@ -24,8 +25,8 @@ import 'hammerjs';
   ],
   declarations: [
     AppComponent,
-    LoginComponent
-    
+    DashboardComponent,
+    PanelChartComponent
   ],
   providers: [
     // DialogOverviewExampleDialog
