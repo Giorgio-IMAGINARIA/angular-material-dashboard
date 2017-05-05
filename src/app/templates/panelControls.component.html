@@ -1,0 +1,102 @@
+<md-card-header>
+
+    <div class="header-panel-left header-panel">
+        <md-card-title>Gateway - details</md-card-title>
+        <md-card-subtitle>Evolution of gateway details over time</md-card-subtitle>
+    </div>
+
+
+    <div class="header-panel-right header-panel">
+        <button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+        <md-menu #menu="mdMenu">
+            <button md-menu-item>
+    <md-icon>dialpad</md-icon>
+    <span>Redial</span>
+  </button>
+            <button md-menu-item disabled>
+    <md-icon>voicemail</md-icon>
+    <span>Check voicemail</span>
+  </button>
+            <button md-menu-item>
+    <md-icon>notifications_off</md-icon>
+    <span>Disable alerts</span>
+  </button>
+        </md-menu>
+    </div>
+
+</md-card-header>
+<md-card-content>
+
+    <div class="searchRow">
+        <md-input-container class="textSearchCell">
+            <input [(ngModel)]="textSearch" (ngModelChange)=onTextSearchChange($event) mdInput placeholder="Search">
+        </md-input-container>
+    </div>
+    <div id="timeSelectorRow" class="searchRow">
+        <p id="timeSelectorTitle">Initial Time limit:</p>
+        <md-radio-group (change)=radioGroupOnChange($event)>
+            <md-radio-button value="1">1 H</md-radio-button>
+            <md-radio-button value="2">1 W</md-radio-button>
+            <md-radio-button value="3">1 M</md-radio-button>
+            <md-radio-button checked="true" value="4">6 M</md-radio-button>
+        </md-radio-group>
+    </div>
+    <div class="searchRow">
+        <div class="timeSearchCell timeSearchCellLeft">
+            <p>Initial time search</p>
+            <md-slider [(ngModel)]="leftValue" (input)=moveLeftSlider($event) [value]="leftValue"></md-slider>
+            <div class="timeInputRow">
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="leftYearValue" mdInput placeholder="yyyy" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="leftMonthValue" mdInput placeholder="MM" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="leftDayValue" mdInput placeholder="dd" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="leftHourValue" mdInput placeholder="HH" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input (keydown)="saveInput($event)" (keyup)="onInputChange($event)" [(ngModel)]="leftMinuteValue" mdInput placeholder="mm" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="leftSecondValue" mdInput placeholder="ss" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="leftMillisecondValue" mdInput placeholder="SSS" disabled="true">
+                </md-input-container>
+            </div>
+        </div>
+        <div class="timeSearchCell timeSearchCellRight">
+            <p>Final time search</p>
+            <md-slider [invert]="invertRightSlider" [(ngModel)]="rightValue" (input)=moveRightSlider($event) [value]="rightValue"></md-slider>
+            <div class="timeInputRow">
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="rightYearValue" mdInput placeholder="yyyy" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="rightMonthValue" mdInput placeholder="MM" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="rightDayValue" mdInput placeholder="dd" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="rightHourValue" mdInput placeholder="HH" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="rightMinuteValue" mdInput placeholder="mm" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="rightSecondValue" mdInput placeholder="ss" disabled="true">
+                </md-input-container>
+                <md-input-container class="timeTextSearchCell">
+                    <input [(ngModel)]="rightMillisecondValue" mdInput placeholder="SSS" disabled="true">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+</md-card-content>

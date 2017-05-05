@@ -1,0 +1,72 @@
+
+.simple-button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+      -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    margin-right: 2%;
+}
+.simple-button:focus {
+  outline: none;
+}
+.simple-button:hover {
+  background-color: #eaeaea;
+
+}
+.simple-button:active {
+   background-color: #989898;
+}
+.header-elements-wrap{
+    display:flex;
+    align-items: center;
+}
+.list-cell-8{
+    width:8%
+}
+.list-cell-7{
+    width:7%
+}
+.list-cell-9{
+    width:9%
+}
+.list-cell-25{
+    width:25%
+}
+.list-cell-20{
+    width:20%
+}
+.list-cell-5{
+    width:5%
+}
+.list-cell-15{
+    width:15%
+}
+.list-cell-1{
+    width:1%;
+    display:flex;
+    justify-content: center;
+}
+.inner-list-wrapper{
+    display:flex;
+    align-items: center;
+}
+.header-panel-left{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-panel{
+    flex-grow: 1;
+}
+
+.header-panel-right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

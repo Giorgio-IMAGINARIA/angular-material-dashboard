@@ -1,3 +1,12 @@
+.main-content-wrap{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    
+}
+.generic-card{
+  width: 100%;
+}
 #mainbar-style{
     font-weight: 400;
 }
@@ -79,35 +88,17 @@ md-chip {
 .header-panel{
     flex-grow: 1;
 }
-#main-content-wrap{
-    width: 100%;
-    display: -webkit-flex;
-    display:flex;
-    /*-webkit-flex-wrap: wrap;*/
-    flex-wrap: wrap;
-    
-}
 #main-content-inner-wrap{
     display:flex;
-    /*flex-wrap: wrap;*/
 }
 .card-wrap{
  padding:20rem;
- /*-webkit-flex: 1 1 0;*/
  display: flex;
- /*flex: 1 1 0;*/
  flex-grow: 1;
  flex-shrink: 1;
  flex-basis: auto;
- /*flex-basis: 400px;*/
  justify-content: center;
     
-}
-.generic-card {
-  width: 400px;
-      display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .example-header-image {

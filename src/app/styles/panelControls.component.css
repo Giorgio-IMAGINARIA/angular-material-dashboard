@@ -1,0 +1,70 @@
+.timeTextSearchCell input {
+   color: #000;
+}
+
+.timeTextSearchCell{
+     flex-grow:1;
+}
+
+.timeSearchCellLeft{
+padding-right: 10%;
+}
+
+.timeSearchCellRight{
+padding-left: 10%;
+}
+
+.timeInputRow{
+    display:flex;
+}
+
+.timeSearchCell{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    justify-content: center;
+}
+
+.textSearchCell{
+    width:25%;
+}
+
+.searchRow, #timeSelectorRow{
+    padding:16px;
+    display:flex;
+}
+
+.searchRow{
+    justify-content: flex-end;
+}
+
+#timeSelectorRow{
+    justify-content: flex-start;
+    height:50px;
+        align-items: flex-end;
+}
+
+#timeSelectorTitle{
+    margin:0;
+    padding-right:40px;
+}
+
+md-radio-group > md-radio-button:not(:last-child){
+    padding-right:20px;
+}
+
+.header-panel{
+    flex-grow: 1;
+}
+
+.header-panel-left{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-panel-right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

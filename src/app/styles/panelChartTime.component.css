@@ -1,0 +1,31 @@
+.header-panel-left{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-panel{
+    flex-grow: 1;
+}
+
+.header-panel-right{
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.d3-chart {
+  width: 100%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d3-chart .axis path,
+.d3-chart .axis line {
+  stroke: #999;
+}
+
+.d3-chart .axis text {
+  fill: #999;
+}

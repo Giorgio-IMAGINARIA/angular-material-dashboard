@@ -1,0 +1,145 @@
+<md-card-header>
+
+    <div class="header-panel-left header-panel">
+        <md-card-title>Gateway - details</md-card-title>
+        <md-card-subtitle>Evolution of gateway details over time</md-card-subtitle>
+    </div>
+
+
+    <div class="header-panel-right header-panel">
+        <button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+        <md-menu #menu="mdMenu">
+            <button md-menu-item>
+    <md-icon>dialpad</md-icon>
+    <span>Redial</span>
+  </button>
+            <button md-menu-item disabled>
+    <md-icon>voicemail</md-icon>
+    <span>Check voicemail</span>
+  </button>
+            <button md-menu-item>
+    <md-icon>notifications_off</md-icon>
+    <span>Disable alerts</span>
+  </button>
+        </md-menu>
+    </div>
+
+</md-card-header>
+<md-card-content>
+
+    <md-list>
+        <md-list-item>
+            <div md-line>
+                <div class="inner-list-wrapper">
+                    <div class="header-elements-wrap list-cell-5">
+                        <button class="simple-button"><md-icon>keyboard_arrow_up</md-icon></button>
+                        <h4>Type</h4>
+                    </div>
+
+
+
+
+                    <h4 class="list-cell-1">|</h4>
+
+                    <div class="header-elements-wrap list-cell-15">
+                        <button class="simple-button"><md-icon>keyboard_arrow_up</md-icon></button>
+                        <h4>Name</h4>
+                    </div>
+
+
+                    <h4 class="list-cell-1">|</h4>
+
+                    <div class="header-elements-wrap list-cell-20">
+                        <button class="simple-button"><md-icon>keyboard_arrow_down</md-icon></button>
+                        <h4>Timestamp</h4>
+                    </div>
+                    <h4 class="list-cell-1">|</h4>
+
+
+                    <div class="header-elements-wrap list-cell-9">
+                        <button class="simple-button"><md-icon>keyboard_arrow_up</md-icon></button>
+                        <h4>Capacity(Av)</h4>
+                    </div>
+
+
+                    <h4 class="list-cell-1">|</h4>
+
+
+                    <div class="header-elements-wrap list-cell-9">
+                        <button class="simple-button"><md-icon>keyboard_arrow_down</md-icon></button>
+                        <h4>Bridges</h4>
+                    </div>
+
+
+                    <h4 class="list-cell-1">|</h4>
+
+
+                    <div class="header-elements-wrap list-cell-9">
+                        <button class="simple-button"><md-icon>keyboard_arrow_down</md-icon></button>
+                        <h4>Channels</h4>
+                    </div>
+
+                    <h4 class="list-cell-1">|</h4>
+
+                    <div class="header-elements-wrap list-cell-9">
+                        <button class="simple-button"><md-icon>keyboard_arrow_up</md-icon></button>
+                        <h4>Destinations</h4>
+                    </div>
+
+
+                    <h4 class="list-cell-1">|</h4>
+
+
+                    <div class="header-elements-wrap list-cell-9">
+                        <button class="simple-button"><md-icon>keyboard_arrow_up</md-icon></button>
+                        <h4>SIP Lines</h4>
+                    </div>
+
+                    <h4 class="list-cell-1">|</h4>
+
+
+
+                    <div class="header-elements-wrap list-cell-7">
+                        <button class="simple-button"><md-icon>keyboard_arrow_down</md-icon></button>
+                        <h4>City</h4>
+                    </div>
+
+                </div>
+            </div>
+            <md-divider md-line></md-divider>
+        </md-list-item>
+
+
+
+        <md-list-item *ngFor="let item of items">
+
+            <div md-line>
+                <div class="inner-list-wrapper">
+                    <md-icon class="list-cell-5">settings_input_svideo</md-icon>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-15">{{item._source.beat.name}}</p>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-20">{{item._source.timestamp}}</p>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-9">{{item._source.capacity.available}}</p>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-9">{{item._source.capacity.bridges}}</p>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-9">{{item._source.capacity.channels}}</p>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-9">{{item._source.capacity.destinations}}</p>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-9">{{item._source.capacity.siplines}}</p>
+                    <p class="list-cell-1">|</p>
+                    <p class="list-cell-7">{{item._source.city}}</p>
+                </div>
+            </div>
+            <md-divider md-line></md-divider>
+
+        </md-list-item>
+
+    </md-list>
+
+</md-card-content>
