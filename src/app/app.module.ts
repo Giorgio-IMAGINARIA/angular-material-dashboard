@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Renderer } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 // Routing
 import { routing } from './app.routing';
 // Angular Material
@@ -32,6 +33,7 @@ import 'hammerjs';
 @NgModule({
   imports: [
     BrowserModule,
+    HttpModule,
     FormsModule,
     routing,
     MaterialModule,
