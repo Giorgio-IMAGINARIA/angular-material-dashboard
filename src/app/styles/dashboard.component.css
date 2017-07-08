@@ -92,7 +92,7 @@ md-chip {
     display:flex;
 }
 .card-wrap{
- padding:20rem;
+ padding:2rem;
  display: flex;
  flex-grow: 1;
  flex-shrink: 1;
