@@ -6,5 +6,3 @@ A dashboard made with Angular2 + Angular Material
 4) - type "npm run build" in the root directory
 5) - navigate to "http://localhost:8081/" in your browser
 6) - enjoy :)
-
-Live application at http://www.imaginaria.uk/
